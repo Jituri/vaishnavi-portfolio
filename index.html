@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaishnavi Jituri Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Vaishnavi.</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-left">
+        <h3>Hi, I'm</h3>
+        <h1>Vaishnavi Jituri</h1>
+        <h2>Computer Science Engineer</h2>
+        <p>
+            Python & Django Developer | Cybersecurity Enthusiast | Web Application Developer
+        </p>
+
+        <div class="socials">
+
+        <a href="https://www.linkedin.com/in/vaishnavi-jituri-01453b35a" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+        <a href=" https://github.com/Jituri" target="_blank"><i class="fab fa-github"></i></a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vaishnavijituri002@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+
+</div>
+    </div>
+
+    <div class="hero-right">
+        <img src="profile.jpg">
+    </div>
+
+</section>
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <div class="card">
+
+        <p>
+            I am a Computer Science Engineering graduate from KLE Institute of Technology with a CGPA of 8.18. Before pursuing my Bachelor's degree, I completed a Diploma in Computer Science Engineering. After successfully qualifying the DCET examination, I secured admission to KLE Institute of Technology to continue my academic journey in engineering.
+        
+        </p><br>
+        <p>    
+            Throughout my studies, I developed a strong foundation in programming, web development, database management, and software engineering. My goal is to build impactful software solutions that solve real-world problems while continuously enhancing my technical and professional skills.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="experience">
+
+    <h2>Work Experience</h2>
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-date">
+                    Feb 2026 - May 2026
+                </span>
+
+                <h3>Python Django Development Intern</h3><br>
+
+                <p>
+                    Completed a Python Django Development Internship
+                    where I worked on web application development using
+                    Python, Django, HTML, CSS, JavaScript, and databases.
+                </p><br>
+                <p>
+                    During the internship, I contributed to multiple
+                    projects and independently developed an
+                    <strong>E-Commerce Web Application with Vendor and Inventory Management</strong>.
+                    The application included product management,
+                    inventory tracking, vendor management, user
+                    authentication, and order processing features.
+                </p><br>
+
+            </div>
+
+        </div>
+
+        <!-- Older Internship -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span class="timeline-date">
+                    Feb 2023 - June 2023
+                </span>
+
+                <h3>Cyber Security Intern</h3><br>
+
+                <p>
+                    Completed a Cyber Security Internship where I gained
+                    practical exposure to cybersecurity concepts,
+                    malware analysis, and system protection techniques.
+                </p><br>
+                <p>
+                    As part of the internship, I developed an
+                    <strong>Antivirus Software Application</strong>
+                    capable of scanning files and detecting potential
+                    security threats and suspicious activities.
+                </p><br>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill-grid">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Bootstrap</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Python</div>
+<div class="skill">MySQL</div>
+<div class="skill">DBMS</div>
+<div class="skill">SQLite</div>
+<div class="skill">Django</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<button class="project-card"
+onclick="openProject(
+'🛒 E-Commerce Web Application with Vendor & Inventory Management',
+'Developed during Python Django Development Internship in 8th semester of Engineering, this E-Commerce Web Application provides a complete online marketplace solution with vendor and inventory management features. The system allows vendors to manage products, track stock availability, update inventory, and process customer orders efficiently. It includes user authentication, product catalog management, shopping cart functionality, and inventory monitoring, ensuring a seamless shopping experience for customers and effective business management for vendors..'
+)">
+E-Commerce Web Application
+</button>
+
+<button class="project-card"
+onclick="openProject(
+'🛡️ Antivirus Software',
+'Developed during my Cyber Security Internship in 6th semester of Diploma, this Antivirus Software application scans files and directories to identify potential malware, suspicious activities, and security threats. The project helped me gain practical knowledge of cybersecurity concepts, malware detection techniques, file scanning mechanisms, and system protection strategies, contributing to improved device security and threat prevention.'
+)">
+Antivirus Software
+</button>
+
+
+<button class="project-card"
+onclick="openProject(
+'🌸 Detection of Chemical Adulteration in Jasmine Flowers',
+'Developed as my Major Project during Engineering, this Machine Learning-based application detects chemical adulteration in jasmine flowers using image processing and classification techniques. Users can upload an image of a flower, and the system predicts whether the flower is Pure Jasmine, Adulterated Jasmine, or Not a Jasmine Flower. The project aims to improve quality assessment and consumer safety by providing accurate and automated flower classification with prediction results.'
+)">
+Jasmine Flower Project
+</button>
+
+
+<button class="project-card"
+onclick="openProject(
+'🔐 Text Encryption and Decryption Using Image',
+'Developed as a Minor Project during Engineering, this application provides secure communication through image-based text encryption and decryption. The system hides encrypted text within images and retrieves the original message through the decryption process. By combining cryptography and image-based data hiding techniques, the project enhances data confidentiality and demonstrates secure information exchange methods.'
+)">
+Text Encryption and Decryption
+</button>
+
+</div>
+
+</section>
+
+
+<section id="certifications">
+
+    <h2>Certificates</h2>
+
+    <div class="certificate-container">
+
+        <div class="certificate-card"
+            onclick="showCertificate('Internship on Python Django Development','certificates/django.jpg')">
+            Python Django Development Internship
+        </div>
+
+        <div class="certificate-card"
+            onclick="showCertificate('Cyber Security Internship','certificates/cyber.jpg')">
+            Cyber Security Internship
+        </div>
+
+        <div class="certificate-card"
+            onclick="showCertificate('Infosys certificate on introduction to cyber security','certificates/infosys.jpg')">
+            Infosys certificate on introduction to cyber security
+        </div>
+
+        <div class="certificate-card"
+            onclick="showCertificate('National Level Hackathon Participant','certificates/Hackathon.jpg')">
+            National Level Hackathon Participant
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Certificate Popup -->
+
+<div id="certificatePopup" class="popup">
+
+    <span class="close-btn" onclick="closeCertificate()">&times;</span>
+
+    <h3 id="certificateName"></h3>
+
+    <img id="certificateImg" src="" alt="Certificate">
+
+</div>
+
+
+<section id="contact">
+
+<h2>Let's Connect</h2>
+
+<div class="card">
+<p>Email: <a href="mailto:vaishnavijituri002@gmail.com">vaishnavijituri002@gmail.com</a></p>
+<p>Phone: +91 81473 82840</p>
+<p>LinkedIn: https://www.linkedin.com/in/vaishnavi-jituri-01453b35a</p>
+<p>GitHub: https://github.com/Jituri</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Vaishnavi Jituri
+</footer>
+
+<div id="projectModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close"
+onclick="closeProject()">&times;</span>
+
+<h2 id="projectTitle"></h2>
+
+<p id="projectDescription"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
